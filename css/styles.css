@@ -41,6 +41,9 @@ body {
     background-color: var(--dsc-color-bg-primary);
 }
 
+/* -------------------------------------------------- */
+/* header styles */
+
 header {
     background-color: var(--dsc-color-bg-secondary);
     height: 70px;
@@ -56,11 +59,30 @@ nav {
     align-items: center;
 }
 
+nav h1{
+    font-size: 24px;
+}
+
+nav a{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------------- */
+/* generic styles */
+
 .arc-container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
+
+.arc-mb20 {
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* card styles */
 
 .arc-card {
     border: 1px solid var(--dsc-color-card-border);
@@ -71,6 +93,10 @@ nav {
 .arc-line-bottom {
     border-bottom: 1px solid var(--dsc-color-card-border) ;
 }
+
+
+/* ------------------------------------------------------------------ */
+/* button styles */
 
 .arc-btn-page-container{
     width: 220px;
@@ -100,6 +126,3 @@ nav {
     border: 1px solid  var(--dsc-color-btn-primary);
 }
 
-.arc-mb20 {
-    margin-bottom: 20px;
-}
