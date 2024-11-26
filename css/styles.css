@@ -87,6 +87,10 @@ nav a{
     margin-bottom: 20px;
 }
 
+.arc-mt20 {
+    margin-top: 20px;
+}
+
 /* ------------------------------------------------------------------ */
 /* card styles */
 
@@ -138,5 +142,16 @@ nav a{
     background-color: var(--dsc-color-btn-inverse) ;
     color: var(--dsc-color-btn-primary);
     border: 1px solid  var(--dsc-color-btn-primary);
+}
+
+.arc-btn-next-page {
+    border: 1px solid var(--dsc-color-btn-primary);
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--dsc-color-btn-primary) ;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
