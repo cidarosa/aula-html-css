@@ -4,3 +4,38 @@
     padding: 20px 0;
 }
 
+.arc-catalog-cards {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+}
+
+.arc-catalog-card-top {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.arc-catalog-card-top img {
+    width: 150px;
+    height: 150px;
+}
+
+.arc-catalog-card-bottom {
+    padding: 10px 20px;
+    min-height: 110px;
+}
+
+.arc-catalog-card-bottom h3 {
+    color: var(--dsc-color-font-secondary);
+    font-size: 20px;
+}
+
+.arc-catalog-card-bottom h4 {
+    color: var(--dsc-color-font-primary);
+    font-size: 12px;
+    /* font-weight: 700; */
+}
+
+
+
