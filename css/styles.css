@@ -125,6 +125,8 @@ nav a {
 }
 
 .arc-btn {
+    width: 100%;
+    height: 42px ;
     border-radius: 4px;
     height: 42px;
     font-size: 16px;
@@ -135,6 +137,7 @@ nav a {
 }
 
 .arc-btn-blue {
+    border: none;
     background-color: var(--dsc-color-btn-primary);
     color: var(--dsc-color-btn-inverse);
 }
@@ -156,6 +159,7 @@ nav a {
     cursor: pointer;
 }
 
+/* ---------------------------------------- */
 /* search bar styles */
 .arc-search-bar {
     height: 40px;
@@ -177,11 +181,11 @@ nav a {
     color: var(--dsc-color-font-primary);
 }
 
-.arc-search-bar input:focus{
+.arc-search-bar input:focus {
     outline: none;
 }
 
-.arc-search-bar input::placeholder{
+.arc-search-bar input::placeholder {
     color: var(--dsc-color-font-placeholder);
 }
 
@@ -198,4 +202,66 @@ nav a {
 .arc-search-bar button[type="reset"] {
     border-left: none;
     border-radius: 0 4px 4px 0;
+}
+
+/* ---------------------------------------- */
+/* form styles */
+
+.arc-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.arc-form h2 {
+    font-size: 16px;
+    color: var(--dsc-color-font-primary);
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+.arc-form-controls-container {
+    width: 100%;
+    display: grid;
+    row-gap: 20px;
+    margin: 20px 0;
+}
+
+.arc-form-control {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 20px;
+    color: var(--dsc-color-font-primary);
+    border-radius: 4px;
+    border: 1px solid var(--dsc-color-card-border);
+}
+
+.arc-form-control:focus {
+    outline: none;
+}
+
+.arc-form-control::placeholder {
+    color: var(--dsc-color-font-placeholder);
+}
+
+.arc-input-error{
+    border: 1px solid var(--dsc-color-error);
+}
+
+.arc-form-error {
+    color: var(--dsc-color-error);
+    font-size: 12px;
+    padding-left: 4px;
+
+}
+
+@media (min-width: 576px) {
+
+    .arc-form h2 {
+        font-size: 24px;
+    }
+
 }
