@@ -1,0 +1,26 @@
+@import url("styles.css");
+
+#product-form-section {
+    padding: 20px 0;
+}
+
+.arc-product-form-container {
+    /* width: 100%; */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.arc-product-form-buttons {
+    width: 100%;
+    display: grid;
+    /* row-gap: 20px; */
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(218px, 1fr));
+}
+
+@media (min-width: 576px) {
+
+    #product-form-section {
+        padding: 40px 0;
+    }
+}
