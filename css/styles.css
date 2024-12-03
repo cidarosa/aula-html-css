@@ -100,6 +100,12 @@ nav a {
     margin-top: 20px;
 }
 
+.arc-section-title {
+    text-align: center;
+    color: var(--dsc-color-font-primary);
+    font-size: 16px;
+}
+
 /* ------------------------------------------------------------------ */
 /* card styles */
 
@@ -292,4 +298,20 @@ nav a {
         font-size: 24px;
     }
 
+}
+
+/* ------------------------------------ */
+/* table styles */
+.arc-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.arc-table thead { 
+    background-color: var(--dsc-color-card-bg);
+}
+
+.arc-table tbody { 
+    background-color: var(--dsc-color-card-bg);
 }
