@@ -66,12 +66,30 @@ nav {
 }
 
 nav h1 {
-    font-size: 24px;
+    font-size: 16px;
 }
 
 nav a {
     font-size: 14px;
     font-weight: 700;
+}
+
+.arc-navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.arc-menu-items-container {
+    display: flex;
+}
+
+.arc-menu-items-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.arc-menu-item {
+    margin-right: 20px;
 }
 
 .arc-logged-user {
@@ -82,6 +100,12 @@ nav a {
 
 .arc-logged-user p {
     font-size: 12px;
+}
+
+@media (min-width: 576px) {
+    nav h1 {
+        font-size: 24px;
+    }
 }
 
 /* ---------------------------------------------------------- */
