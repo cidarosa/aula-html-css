@@ -111,6 +111,13 @@ nav a {
     text-align: left;
 }
 
+@media (min-width: 576px) {
+    .arc-section-title {
+        text-align: left;
+        font-size: 24px;
+    }
+}
+
 /* ------------------------------------------------------------------ */
 /* card styles */
 
@@ -331,4 +338,74 @@ nav a {
 .arc-table tbody tr {
     height: 70px;
     border-top: 1px solid var(--dsc-color-card-border);
+}
+
+.arc-table th:nth-child(2) {
+    border-top-left-radius: 10px;
+}
+
+.arc-table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+
+/* pega a segunda coluna - filho na posição 2 */
+.arc-table td:nth-child(2) {
+    padding-left: 10px;
+}
+
+/* último filho */
+.arc-table td:last-child {
+    padding-right: 5px;
+}
+
+.arc-tb576 {
+    display: none;
+}
+
+.arc-tb768 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+
+    .arc-tb576 {
+        display: table-cell;
+    }
+
+    /* th */
+    .arc-table th:nth-child(1) {
+        padding-left: 20px;
+        border-top-left-radius:10px;
+    }
+
+    .arc-table th:nth-child(2) {
+        border-top-left-radius:0;
+     }
+    /* pega a segunda coluna - filho na posição 1 */
+    .arc-table td:nth-child(1) {
+        padding-left: 20px;
+    }
+
+    /* pega a segunda coluna - filho na posição 2 */
+    .arc-table td:nth-child(2) {
+        padding-left: 0;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+
+    .arc-tb768 {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .arc-table tbody {       
+        font-size: 16px;
+    }
+
 }
